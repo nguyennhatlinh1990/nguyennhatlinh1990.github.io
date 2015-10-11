@@ -1,25 +1,65 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
-		<title></title>
+		<title>Nguyen Nhat Linh's resume</title>
+		<link type="text/css" rel="stylesheet" href="css/stylesheet.css"/> 
+        <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+.left{
+	background-color: black;
+}
+.left p{
+  color: white;
+  font-size: 16px;
+  font-family: "Courier";
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 33.5em;
+  animation: type 4s steps(60, end); 
+}
+
+.left p:nth-child(3){
+	font-size: 16px;
+	width: 31em;
+	animation: type2 8s steps(60, end);
+}
+
+span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+    </style>
 	</head>
 	<body>
 	    <div id="header">
 	        <div class="header_left">
-              <p>Linh NGUYEN Nhat</p>                                                   <p>Senior Java Developer</p>
+              <p>Linh NGUYEN Nhat</p>
+			  <p>Senior Java Developer</p>
               <p>4 years of experience</p>
 	        </div>
 	        <div class="header_right">
 	            <p>Address: Tan Phu District, Ho Chi Minh City</p>
-                <p>Phone: 0979927702</p>
                 <p><a id="email" href="mailto:nguyennhatlinh1990@gmail.com">Email: nguyennhatlinh1990@gmail.com</a></p>
 	        </div>
 	    </div>
 	    <div class="left">
 	        <img src="https://raw.githubusercontent.com/nguyennhatlinh1990/nguyennhatlinh1990.github.io/master/image/avatar.jpg"></img>
 	        <p>"It's not about the money, it's about sending a message.</p>
-	        <p>This town deserves a better class of Programmer"</p>
+	        <p>This town deserves a better class of Programmer.:)"<span>|</span></p>
 	    </div>
 	    <div class="right">
 	        <h3>KEY SKILLS</h3>
@@ -74,5 +114,6 @@ and Upgrade)</li>
 	    </div>
 	    <div id="footer">
 	    </div>
+		<script src="js/prefixfree.min.js"></script>
 	</body>
 </html>
