@@ -3,24 +3,35 @@ div{
 }
 #header{
     z-index: 1;
+    border-radius:0px;
     width:100%;
     background-color:black;
-    height: 140px;
     position:fixed;
-    margin-top: -20px;
+    margin-top: 0px;
     color:white;
     opacity: 0.8;
+    margin: 0 0 0 0;
 }
+
 #header .header_left p:nth-child(1){
     font-size: 30px;
+    margin-top: 10px;
 }
 #header .header_left p:nth-child(2){
     font-size: 20px;
-    margin-top: -20px;
 }
 #header .header_left p:nth-child(3){
     font-size: 20px;
-    margin-top: -20px;
+}
+
+#header .header_right p:nth-child(1){
+    margin-top: 40px;
+    width: 100%;
+    text-align: right;
+}
+#header .header_right p:nth-child(2){
+    width: 100%;
+    text-align: right;
 }
 #email{
     text-decoration: none;
@@ -30,29 +41,25 @@ div{
     width:100%;
     border: 1px solid black;
     height: 100px;
-    background-color: black
+    background-color: black;
     position:absolute;
     margin-top:200px;
 }
 .left{
-    position: relative;
-    float: left;
-    width: 35%;
-    height: 550px;
     margin: 150px 0px 0px 10px;
+    padding: 0 0 0 0;
     text-align: center;
     font-family:Helvetica;
+    width: 34.333%;
 }
 
 .left img{
     width: 100%;
+    border-radius: 5px;
 }
 .right{
     color: white;
-    position: relative;
-    float: right;
-    width: 63%;
-    height: 1000px;
+    width: 63.4%;
     background-color:black;
     margin: 150px 0px 0px 10px;
     opacity: 0.6;
@@ -79,4 +86,40 @@ div{
     background-color:black;
     width: 100%;
     opacity: 0.8;
+}
+@media screen and (max-width : 720px) {
+    .right{
+        width: 100%;
+        margin-top: 0;
+    }
+    .left{
+        width: 100%;
+    }
+}
+@media screen and (max-width : 480px) {
+    .right{
+        width: 100%;
+        margin-top: 0;
+    }
+    .header_right{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    #header .header_right p:nth-child(1){
+        margin-top: 0px;
+        width: 100%;
+        text-align: left;
+        margin-left: -5px;
+    }
+    #header .header_right p:nth-child(2){
+        width: 100%;
+        text-align: left;
+        margin-left: -5px;
+    }
+    .left{
+        width: 100%;
+    }
+    .left p{
+         white-space: nowrap;
+    }
 }
